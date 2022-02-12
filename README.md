@@ -6,10 +6,10 @@ Flask Project to handle IP for your tool for free and let the customer change hi
 
 # Importent Notes 
 
-
+Download :
 [install.txt](https://github.com/FalconDigital/Flask-Ip-authnection-/files/8053542/install.txt)
 
-
+use python 3.8.2 or 3.8.5
 install this libraryes with this command 
 
 pip install -r install.txt
