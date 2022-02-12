@@ -28,6 +28,9 @@ IP_SERVER:3000/active_link
 Register Code to let custmers only register ! 
 
 # run sccript 
+git https://github.com/FalconDigital/Flask-Ip-authnection-.git
+
+cd Flask-Ip-authnection
 
 python run.py 
 
