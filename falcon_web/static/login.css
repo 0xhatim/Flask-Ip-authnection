@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&display=swap');
+
+*{
+    font-family: 'Cairo', sans-serif;
+    color: white;
+
+}
+.navbar{
+    background-color: #131313;
+    padding: 1rem 8rem;
+    z-index: 1000;
+
+
+}
+
+.navbar .navbar-brand{
+    font-size: 1.4rem;
+    font-weight: 700;
+
+}
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+    
+}
+.mybtn{
+    background: #00BF85 !important;
+    font-weight: 600 !important;
+    padding: 0.4rem 1.4rem !important;
+    
+    border-radius:30px !important;
+    color: white !important;
+}
+
+.login-block{
+    background: #000000;
+    float: left;
+    width: 100%;
+    padding: 50px;
+}
+
+.banner-sec{
+    background-size: cover;
+
+}
+
+.services a:hover{
+    background: #111 !important;
+
+
+
+}
+
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover{
+    color: #00BF85;
+
+}
+
+.mid .hero a:hover{
+    background: #fff !important;
+
+}
