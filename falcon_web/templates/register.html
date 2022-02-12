@@ -1,0 +1,122 @@
+{% extends "login_layout.html"%}
+
+{% block body %}
+    <br>
+    <br>
+    <br>
+
+<section class="login-block">
+
+    <div class="container">
+        <div class="row">
+
+                <div class="col-md-4 login-sec">
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                    {% if messages %}
+                      {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}">
+                          {{ message }}
+                        </div>
+                      {% endfor %}
+                    {% endif %}
+                  {% endwith %}
+                        <h2 class="text-center">SIGN UP</h2>
+                            <form method="POST" action="" class="login-form">
+                                {{ form.csrf_token }}
+
+                                <fieldset class="form-group">
+                                    <div class="form-group">
+                                    
+                                        {{ form.username.label(class="form-control-label") }}
+                                            <!-- else is normal input-->
+                                        {% if form.username.errors %}
+                                            {{ form.username(class="form-control form-control-lg is-invalid") }}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.username.errors %}
+                                                    <span>{{ error }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.username(class="form-control form-control-lg") }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form.email.label(class="form-control-label") }}
+                                        {% if form.email.errors %}
+                                            {{ form.email(class="form-control form-control-lg is-invalid") }}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.email.errors %}
+                                                    <span>{{ error }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.email(class="form-control form-control-lg") }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form.password.label(class="form-control-label") }}
+                                        {% if form.password.errors %}
+                                            {{ form.password(class="form-control form-control-lg is-invalid") }}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.password.errors %}
+                                                    <span>{{ error }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.password(class="form-control form-control-lg") }}
+                                        {% endif %}
+                                    </div>
+                                    <div class="form-group">
+                                        {{ form.register_code.label(class="form-control-label") }}
+                                        {% if form.register_code.errors %}
+                                            {{ form.register_code(class="form-control form-control-lg is-invalid") }}
+                                            <div class="invalid-feedback">
+                                                {% for error in form.register_code.errors %}
+                                                    <span>{{ error }}</span>
+                                                {% endfor %}
+                                            </div>
+                                        {% else %}
+                                            {{ form.register_code(class="form-control form-control-lg") }}
+                                        {% endif %}
+                                    </div>
+                                </fieldset>
+                                <div class="form-group">
+                                    {{ form.submit(class="btn btn-outline-info") }}
+                                </div>
+                            </form>  
+                </div>
+                <div class="col-md-8 banner-sec">
+                    <div id="carouselExampleIndicator" class="carousel slide" data-ride="carousel">
+
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+
+
+                            
+                            </ol>
+                        <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+
+                                        <img class="d-block img-fluid" src="../static/img/12.png" alt="First slide">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <div class="banner-text">
+                                            <h2>Falcon Digital Cumminuty </h2>
+                                            <p>our goal to give you the best user expernice at social media digital market <br> And to provied the best proxies in cheap prices with no limits <br> Totally secure 100% </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+
+    </div>
+<br>
+<br>
+
+</section>
+
+{% endblock %}

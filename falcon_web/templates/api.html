@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    {% for i in my_list %}
+    <p>
+        {% if i.ip_active_proxies == None %}
+        
+        {% else %}
+            {{ i.ip_active_proxies }}  "{{ i.username }}"
+        {% endif %}
+
+    </p>
+
+    {% endfor %}
+</body>
+
+</html>
