@@ -5,13 +5,13 @@ from flask_login import LoginManager
 from flask_mail import Mail
 from flask_assets import Environment,Bundle
 from flask_wtf.csrf import CSRFProtect
-
+import secrets
 
 app = Flask(__name__)
 db = SQLAlchemy(app)# db here
 bcrypt = Bcrypt(app)
 
-app.config['SECRET_KEY'] = 'c6147ff05b5f00382b0c60c24208'
+app.config['SECRET_KEY'] = f'{secrets.token_hex(16)}'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 csrf = CSRFProtect(app)
 
