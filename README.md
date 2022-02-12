@@ -27,6 +27,11 @@ IP_SERVER:3000/active_link
 
 Register Code to let custmers only register ! 
 
+# run sccript 
+
+python run.py 
+
+
 # New Updates Comming :
 
 Create more than script to handle ip .. 
