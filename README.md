@@ -10,6 +10,10 @@ Download :
 [install.txt](https://github.com/FalconDigital/Flask-Ip-authnection-/files/8053542/install.txt)
 
 use python 3.8.2 or 3.8.5
+link to install python3.8.5 
+https://linuxize.com/post/how-to-install-python-3-8-on-ubuntu-18-04/
+
+
 install this libraryes with this command 
 
 pip install -r install.txt
